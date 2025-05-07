@@ -1,51 +1,51 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: 'Poppins', sans-serif;      
 }
+/* header */
 header{
-
-}
-.navbar{
-    height:80px;
     background-color: black;
-    padding-left: 16vw;
-    padding-top: 20px;
-    font-size: 25px;
-    text-align: center;
-    position: fixed;
-    top: 0px;
-    z-index: 1;
+    border: 1px solid gray;
+    height: 80px;
+    width: 100%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
-a{
+@media (max-width: 650px){
+    header{
+        font-size: 0.9rem;
+    }
+}
+header a{
     color: white;
     text-decoration: none;
-    margin-right: 16vw;
 }
-main{
-    background-color: ;
-    position: relative;
-    top: 80px;
-    padding-bottom: 10px;
+header a:hover{
+    border: 1.5px solid white;
 }
-h2{
+h1{
     color: rgb(0, 0, 0);
     text-align: center;
-    font-size: 35px;
     margin-bottom: 20px;
+    font-size: 30px;
 }
 #para{
     display: inline-block;
     color: #15616d;
-    font-size: 25px;
-    line-height: 25px;
+    line-height:1.2;
     padding-left: 30px;
     padding-top: 40px;
 }
 .form{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    margin-bottom: 70px;
+    height: 100vh;
 
 }
 .contact_form{
@@ -67,15 +67,39 @@ textarea {
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
-  font-size: 17px;
+  font-size: 1rem;
   color: #4c5270;
 }
 
 textarea {
   resize: vertical;
   height: 200px;
-  font-size: 15px;
+  font-size: 0.9rem;
 }
+
+@media (max-width:650px) and (max-height:700px) {
+    #para{
+        font-size: 0.8rem;
+    }
+    h1{
+        font-size: 20px;
+    }
+    .form{
+        height: 70vh;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="submit"],
+    textarea {
+        width: 200px;
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+    } 
+    textarea{
+        height: 100px;
+    }  
+    }
 
 input[type="submit"]{
     background-color: #15616d;
@@ -86,13 +110,33 @@ input[type="submit"]{
 .submit:hover{
     background-color: #78290f;
 }
-footer{
-    background-color: rgb(6, 6, 41);
+.footer-panel1{
+    height: 100px;
+    background-color: #023047;
+    border-bottom: 1px solid gainsboro;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer-panel1 a{
+    text-decoration: none;
+}
+.footer-links{
     color: white;
-    text-align: right;
+    text-decoration: none;
+    text-align: center;
+    line-height: 45px;
+}
+.footer-panel1 i{
+    color: white;
+    font-size: 30px;
+}
+.copyright{
+    background-color: black;
+    color: white;
+    text-align: center;
     line-height: 25px;
-    padding-right: 20px;
+    padding-right: 25px;
     padding-top: 15px;
     padding-bottom: 15px;
-   margin-top: 20px;
 }
