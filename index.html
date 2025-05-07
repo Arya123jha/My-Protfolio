@@ -5,25 +5,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <!-- Navbar -->
     <header>
-        <h1>My Protfolio</h1>
-        <div class="navbar">
-            <a href="index.html">Profile</a>
-            <a href="">Projects</a>
-            <a href="contactme.html">Contact</a>
-            <a href="https://www.facebook.com/arya.jha.3110567/" target="_blank"><img height="25px" src="fb.png"></a>
-        </div>
+            <a href="index.html"><i class="fa-solid fa-id-card"></i> Profile</a>
+            <a href=""><i class="fa-solid fa-file"></i> Projects</a>
+            <a href="contactme.html"><i class="fa-solid fa-square-phone"></i> Contact</a>
     </header>
-    <main>
-        <div class="img"><img class="image" src="profile pic.jpeg" alt="image"></div>
-        <section> Education: Pulchowk Campus(BCT) | St Xavier's College(+2) | MVEBS(SEE)</section>
-        <section> Experiences</section>
-        <article>  My Story: </article>
-    </main>
+    <!-- Herosection -->
+   <div class="herosection">
+    <div class="hero-content">
+        <div class="about-photo">
+            <img src="profilepic.jpeg" alt="Arya Jha" />
+          </div>
+        <h1>Hi, I'm <span class="highlight">Arya Jha</span></h1>
+        <p class="tagline">Frontend Developer | Crafting beautiful, user-focused web experiences.</p>
+        <a href="#projects" class="cta-button">View My Work</a>
+    </div>
+   </div>
+   <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="about-content">
+          
+              <!-- About Text -->
+              <div class="about-text">
+                <h2>About Me</h2>
+                <p>
+                  Hi, I'm <strong>Arya Jha</strong>, a passionate Computer Engineering student with a love for web development.
+                  I'm currently focused on building beautiful, responsive, and user-first websites. I'm always excited to learn
+                  new technologies and improve my skills.
+                </p>
+                <p>
+                  My main expertise lies in frontend development, with a strong foundation in HTML, CSS, and JavaScript. I'm
+                  constantly improving my knowledge of frameworks like React and exploring UI/UX design principles to create
+                  exceptional user experiences.
+                </p>
+                <p>
+                  When I'm not coding, I enjoy solving complex problems and staying updated with the latest trends in tech.
+                </p>
+              </div>
+          
+              <!-- Education -->
+              <div class="education">
+                <h2>Education</h2>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Level</th>
+                      <th>GPA</th>
+                      <th>Institute</th>
+                      <th>Graduated Year</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                        <td>Bachelor's in Computer Engineering</td>
+                        <td>-</td>
+                        <td>Pulchowk Engineering Campus</td>
+                        <td>Currently Running</td>
+                      </tr>
+                    <tr>
+                        <td>+2 (Science)</td>
+                        <td>3.70</td>
+                        <td>Mount View English Boarding School, Balkot, Bhaktapur</td>
+                        <td>2024</td>
+                      </tr>
+                    <tr>
+                      <td>SEE</td>
+                      <td>3.90</td>
+                      <td>Mount View English Boarding School, Balkot, Bhaktapur</td>
+                      <td>2022</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+          
+              <!-- Skills -->
+              <div class="about-skills">
+                <h2>Skills</h2>
+                <ul>
+                  <li>
+                    Frontend Development
+                    <ul>
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>JavaScript</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Version Control
+                    <ul>
+                      <li>Git</li>
+                      <li>GitHub</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+          
+            </div>
+          </section>
+          
+     
     <footer>
+        <div class="footer-panel1">
+            <a href="https://www.facebook.com/arya.jha.3110567/"><div class="footer-links">
+                Facebook <br><i class="fa-brands fa-facebook"></i>
+            </div></a>
+            <a href="https://github.com/Arya123jha">
+                <div class="footer-links">
+                    Github <br><i class="fa-brands fa-github"></i>
+                </div></a>
+            <a href="https://www.linkedin.com/in/arya-jha-a639382a7/">
+                <div class="footer-links">
+                    Linkedin <br><i class="fa-brands fa-linkedin"></i>
+                </div></a>      
+        </div>
+        <div class="copyright">
             &copy;2025, Arya Jha
+        </div>
     </footer>
 </body>
 </html>

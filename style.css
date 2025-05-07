@@ -1,54 +1,199 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: 'Poppins', sans-serif;      
 }
-
+/* header */
 header{
     background-color: black;
     border: 1px solid gray;
-    position: fixed;
-    top: 0;
-    height: 170px;
+    height: 80px;
     width: 100%;
-    z-index: 1;
-}
-.navbar{
-    background-color: black;
-    padding-top: 20px;
     font-size: 25px;
-    padding-bottom: 20px;
-    text-align: center;
-    padding-left: 14vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
-a{
+header a{
     color: white;
     text-decoration: none;
-    margin-right: 14vw;
 }
-h1{
-    background-color: rgb(6, 6, 41);
-    color: #f08804;
-    padding-top: 20px;
-    padding-bottom: 20px;
+header a:hover{
+    border: 1.5px solid white;
+}
+/* Hero-section */
+.herosection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #dcdec1;
+    color: #424242;
     text-align: center;
-    border: 1px solid white;
-}
-main{
-    background-color: #15616d;
-    color: white;
-    padding: 20px;
-    padding-top: 190px;
-    height: 640px;
-}
-.image{
-    height: 200px;
-    width: 200px;
+    padding: 0 20px;
+  }
+  .hero-content img {
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
-}
-footer{
-    background-color: rgb(6, 6, 41);
+    object-fit: cover;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    background-color: #424242;
+  }
+  .hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  
+  .highlight {
+    color: #eebf14;
+  }
+  .tagline {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background-color: #0fa3b1;
+    color: white ;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #f7a072;
+    color: black;
+  }
+  /* about */
+  .about-section {
+    padding: 60px 20px;
+    background-color: #d1e1dc;
+    color: black;
+  }
+  
+  .about-content {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  /* Headings */
+  .about-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color:  #424242;
+    border-bottom:2px solid #650701;
+  }
+  /* Paragraphs */
+  .about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  /* Table Styling */
+  .education table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+  }
+  
+  .education th,
+  .education td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .education thead {
+    background-color: #0081a7;
     color: white;
-    text-align: right;
+  }
+  
+  .education tbody:nth-child(even) {
+    background-color: white;
+  }
+  
+  /* Skills Styling */
+  .about-skills ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .about-skills > ul > li {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  
+  .about-skills ul ul {
+    margin-top: 5px;
+    padding-left: 20px;
+    font-weight: normal;
+  }
+  
+  /* Responsive Design */
+  @media (min-width: 768px) {
+    .about-content {
+      flex-direction: column;
+    }
+  
+    .education table,
+    .about-text,
+    .about-skills {
+      margin-top: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .education table,
+    .education th,
+    .education td {
+      font-size: 14px;
+    }
+  
+    .about-section h2 {
+      font-size: 26px;
+    }
+  
+    .about-text p {
+      font-size: 16px;
+    }
+  }
+  
+  /* footer */
+  .footer-panel1{
+    height: 100px;
+    background-color: #023047;
+    border-bottom: 1px solid gainsboro;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer-panel1 a{
+    text-decoration: none;
+}
+.footer-links{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    line-height: 45px;
+}
+.footer-panel1 i{
+    color: white;
+    font-size: 30px;
+}
+.copyright{
+    background-color: black;
+    color: white;
+    text-align: center;
     line-height: 25px;
     padding-right: 25px;
     padding-top: 15px;
